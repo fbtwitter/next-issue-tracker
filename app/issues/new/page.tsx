@@ -23,7 +23,6 @@ const NewIssuePage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const onSubmit = handleSubmit(async (data) => {
-
     try {
       setIsSubmitting(true)
       await axios.post('/api/issues', data)
