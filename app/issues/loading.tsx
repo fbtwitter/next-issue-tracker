@@ -1,6 +1,5 @@
-import React from 'react'
 import { Table } from '@radix-ui/themes'
-import Skeleton from 'react-loading-skeleton'
+import { Skeleton } from '@/app/components'
 import IssueActions from '@/app/issues/IssueActions'
 
 const LoadingIssuesPage = async () => {

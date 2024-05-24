@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Link as RadixLink } from '@radix-ui/themes'
-import { ReactElement } from 'react'
 
 interface Props {
   href: string,

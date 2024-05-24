@@ -1,12 +1,10 @@
 import Navbar from '@/app/components/Navbar'
-import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import '@radix-ui/themes/styles.css'
 import './theme-config.css'
 import './globals.css'
-import 'react-loading-skeleton/dist/skeleton.css'
 
 import { Theme } from '@radix-ui/themes'
 
