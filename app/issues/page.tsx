@@ -1,8 +1,7 @@
 import { Table } from '@radix-ui/themes'
 import prisma from '@/prisma/client'
-import { IssueStatusBadge } from '@/app/components'
+import { IssueStatusBadge, NavLink } from '@/app/components'
 import IssueActions from '@/app/issues/IssueActions'
-import { NavLink } from '@/app/components'
 
 const IssuesPage = async () => {
   const issues = await prisma.issue.findMany()
@@ -39,5 +38,7 @@ const IssuesPage = async () => {
     </div>
   )
 }
+
+export const dynamic = 'force-dynamic'
 
 export default IssuesPage
