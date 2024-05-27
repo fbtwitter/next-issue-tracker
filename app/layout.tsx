@@ -6,7 +6,7 @@ import '@radix-ui/themes/styles.css'
 import './theme-config.css'
 import './globals.css'
 
-import { Theme } from '@radix-ui/themes'
+import { Container, Theme } from '@radix-ui/themes'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,7 +26,9 @@ export default function RootLayout ({ children }: Readonly<{ children: React.Rea
     <Theme appearance="light" accentColor="mint">
       <Navbar/>
       <main className={'p-5'}>
-        {children}
+        <Container>
+          {children}
+        </Container>
       </main>
     </Theme>
     </body>
