@@ -67,7 +67,7 @@ const AuthStatus = () => {
       <DropdownMenu.Content>
         <DropdownMenu.Label>
           <Text>
-            {session.user!.email}
+            {session!.user!.email}
           </Text>
         </DropdownMenu.Label>
         <DropdownMenu.Item>
