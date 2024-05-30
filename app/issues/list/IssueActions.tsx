@@ -3,6 +3,7 @@ import Link from 'next/link'
 import IssueStatusFilter from '@/app/issues/list/IssueStatusFilter'
 
 const IssueActions = () => {
+
   return (
     <Flex justify="between">
       <IssueStatusFilter/>
